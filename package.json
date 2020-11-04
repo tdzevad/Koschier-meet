@@ -27,6 +27,9 @@
       "!app",
       "!main.js"
     ],
+    "nsis": {
+    	"oneClick": false
+    },
     "mac": {
       "artifactName": "jitsi-meet.${ext}",
       "category": "public.app-category.video",

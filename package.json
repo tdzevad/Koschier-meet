@@ -1,9 +1,9 @@
 {
-  "name": "jitsi-meet-electron",
+  "name": "Koschier-meet-electron",
   "version": "2.4.2",
   "description": "Electron application for Jitsi Meet",
   "main": "./build/main.js",
-  "productName": "Jitsi Meet",
+  "productName": "Koschier Meet",
   "scripts": {
     "start": "webpack --config ./webpack.main.js --mode development && concurrently \"npm:watch\" \"electron ./build/main.js\"",
     "clean": "rm -rf node_modules build dist",
@@ -19,7 +19,7 @@
   },
   "build": {
     "appId": "org.jitsi.jitsi-meet",
-    "productName": "Jitsi Meet",
+    "productName": "Koschier Meet",
     "generateUpdatesFilesForAllChannels": true,
     "files": [
       "**/*",
@@ -31,7 +31,7 @@
     	"oneClick": false
     },
     "mac": {
-      "artifactName": "jitsi-meet.${ext}",
+      "artifactName": "koschier-meet.${ext}",
       "category": "public.app-category.video",
       "darkModeSupport": true,
       "hardenedRuntime": true,
@@ -43,10 +43,10 @@
       }
     },
     "linux": {
-      "artifactName": "jitsi-meet-${arch}.${ext}",
+      "artifactName": "koschier-meet-${arch}.${ext}",
       "category": "VideoConference;AudioVideo;Audio;Video;Network",
-      "description": "Jitsi Meet Desktop App",
-      "executableName": "jitsi-meet",
+      "description": "Koschier Meet Desktop App",
+      "executableName": "koschier-meet",
       "target": [
         {
           "arch": "x64",
@@ -93,7 +93,7 @@
     "electron",
     "jitsi-meet"
   ],
-  "author": "Jitsi Team <support@jitsi.org>",
+  "author": "Jitsi Team <linuxadmin@koschier.it>",
   "readmeFilename": "README.md",
   "license": "Apache-2.0",
   "dependencies": {
